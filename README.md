@@ -9,4 +9,5 @@ This game is modified and improved version of Alien Invasion Game project from t
 Enjoy Playing ~
 
 
-<img width="1192" alt="Screenshot 2024-07-02 at 10 59 30 AM" src="https://github.com/FazliddinOrg/Alien-Invasion-Game/assets/103223186/b5012573-e777-4b8e-a09a-f06da8dc5265">
+
+![alien-invasion](https://github.com/FazliddinOrg/alien-invasion/assets/103223186/792a4bfb-aa4d-4398-b56c-ad8b1428f607)
