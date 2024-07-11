@@ -13,9 +13,9 @@ This project is a reimagined and enhanced version of the classic "Alien Invasion
 ## Features
 
 - **Enhanced Gameplay:** New enemy types, power-ups, and level designs for increased variety and challenge.
-- **Upgraded Graphics:** Modernized sprites, animations, and special effects for a more visually appealing experience.
-- **Difficulty Levels:** Adjustable difficulty settings to cater to both casual and experienced players.
-- **High Scores:**  Track your progress and compete with others on a leaderboard.
+- **Upgraded Graphics:** Modernized sprites and special effects for a more visually appealing experience.
+- **Difficulty Levels:** Difficulty levels become more challenging as you play.
+- **High Scores:**  Track your progress
 
 ## Screenshot
 
@@ -31,7 +31,3 @@ This project is a reimagined and enhanced version of the classic "Alien Invasion
 1. **Clone the Repository:**
    ```bash
    git clone [https://github.com/FazliddinOrg/alien-invasion]
-
-
-
-![alien-invasion](https://github.com/FazliddinOrg/alien-invasion/assets/103223186/792a4bfb-aa4d-4398-b56c-ad8b1428f607)
