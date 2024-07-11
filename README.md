@@ -1,12 +1,36 @@
-This game is modified and improved version of Alien Invasion Game project from the book "Python Crash Course".
+# Alien Invasion: Enhanced Edition
 
-* Game difficulty is changed from easy to hard.
-* Now you can see all time high scorer, and keeps it in txt file.
-* Totally different UX/UI
+This project is a reimagined and enhanced version of the classic "Alien Invasion" game from the "Python Crash Course" book by Eric Matthes. It combines the core gameplay elements with new features, improved graphics, and additional challenges.
 
-* New functions are coming soon ...
+## Table of Contents
 
-Enjoy Playing ~
+- [Features](#features)
+- [Screenshot](#screenshot)
+- [Prerequisites](#prerequisites)
+- [Installation](#installation)
+- [How to Play](#how-to-play)
+
+## Features
+
+- **Enhanced Gameplay:** New enemy types, power-ups, and level designs for increased variety and challenge.
+- **Upgraded Graphics:** Modernized sprites, animations, and special effects for a more visually appealing experience.
+- **Difficulty Levels:** Adjustable difficulty settings to cater to both casual and experienced players.
+- **High Scores:**  Track your progress and compete with others on a leaderboard.
+
+## Screenshot
+
+![alien-invasion](https://github.com/FazliddinOrg/alien-invasion/assets/103223186/792a4bfb-aa4d-4398-b56c-ad8b1428f607)
+
+## Prerequisites
+
+- Python 3.x
+- Pygame library
+
+## Installation
+
+1. **Clone the Repository:**
+   ```bash
+   git clone [https://github.com/FazliddinOrg/alien-invasion]
 
 
 
