@@ -1,6 +1,6 @@
 # Alien Invasion: Enhanced Edition
 
-This project is a reimagined and enhanced version of the classic "Alien Invasion" game from the "Python Crash Course" book by Eric Matthes. It combines the core gameplay elements with new features, improved graphics, and additional challenges.
+An enhanced space shooter game featuring smooth controls, improved graphics, and dynamic gameplay. Players face waves of enemies, increasing difficulty, and exciting visual effects.
 
 ## Table of Contents
 
@@ -23,7 +23,7 @@ This project is a reimagined and enhanced version of the classic "Alien Invasion
 
 ## Prerequisites
 
-- Python 3.x
+- Python 3.9.0
 - Pygame library
 
 ## Installation
