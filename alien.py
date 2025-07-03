@@ -1,50 +1,45 @@
 import pygame
 from pygame.sprite import Sprite
-from random import randint
+from random import choice
 
 
-def get_color():
-    """Set randomness for aliens."""
-    colors = ['./images/monster.png',
-              './images/gorilla.png']
-    random_index = randint(0, len(colors)-1)
-    alien_color = colors[random_index]
-    return alien_color
+def load_random_alien_image():
+    """Randomly select an alien image path."""
+    image_paths = ['./images/monster.png', './images/gorilla.png']
+    return choice(image_paths)
 
 
 class Alien(Sprite):
-    """A class to represent a single alien in the fleet."""
-    def __init__(self, ai_settings, screen):
-        """Initialize the alien and set its starting position."""
+    """A single alien enemy in the fleet."""
+
+    def __init__(self, settings, screen):
+        """Initialize alien and set its position."""
         super().__init__()
         self.points = 15
         self.screen = screen
-        self.ai_settings = ai_settings
-        # Load the alien image and set its rect attribute.
-        self.image = pygame.image.load(get_color())
+        self.settings = settings
+
+        # Load the alien image
+        self.image = pygame.image.load(load_random_alien_image())
         self.rect = self.image.get_rect()
-        # Start each new alien near the top left of the screen.
+
+        # Start near the top-left
         self.rect.x = self.rect.width
         self.rect.y = self.rect.height
-        # Store the alien's exact position.
+
+        # Store float x-coordinate for smooth movement
         self.x = float(self.rect.x)
 
     def update(self):
-        """Move the alien right or left."""
-        self.x += (self.ai_settings.alien_speed_factor *
-                   self.ai_settings.fleet_direction)
+        """Move alien left or right depending on fleet direction."""
+        self.x += self.settings.alien_speed_factor * self.settings.fleet_direction
         self.rect.x = self.x
 
     def check_edges(self):
-        """Return True if alien is at edge of screen."""
+        """Return True if alien hits screen edge."""
         screen_rect = self.screen.get_rect()
-        if self.rect.right >= screen_rect.right:
-            return True
+        return self.rect.right >= screen_rect.right or self.rect.left <= 0
 
-        elif self.rect.left <= 0:
-            return True
-
-    def blit(self):
-        """Draw the alien at its current location."""
+    def draw(self):
+        """Draw the alien on the screen."""
         self.screen.blit(self.image, self.rect)
-
